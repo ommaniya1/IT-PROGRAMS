@@ -1,0 +1,41 @@
+/* style.css */
+
+/* Basic Serif Font with increased size */
+.serif-text {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    color: rgba(19, 156, 156, 0.568);
+}
+
+/* Sans-Serif Font with bold weight */
+.sans-bold-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold; /* Makes the text thick */
+    color: #cc00ff;
+}
+
+/* Monospace Font (typewriter style) with italic style */
+.mono-italic-text {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    font-style: italic; /* Slants the text */
+    color: #e68403;
+}
+
+/* Combining multiple font properties */
+.custom-fancy-text {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", sans-serif;
+    font-size: 28px;
+    font-weight: 900; /* Extra bold */
+    font-style: italic;
+    text-transform: uppercase; /* Automatically makes all letters capital */
+    letter-spacing: 2px; /* Adds space between letters */
+    color: #E91E63;
+}
+/* Custom color using RGBA (Red, Green, Blue, Alpha) */
+.colorful-text {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    color: rgba(255, 0, 0, 0.5); /* Semi-transparent red */
+}

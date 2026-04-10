@@ -1,0 +1,28 @@
+/* 1. Unvisited link: The default state before a user clicks it */
+a:link {
+    color: #2196F3; /* Blue */
+    text-decoration: none; /* Removes the default underline */
+}
+
+/* 2. Visited link: After the user has clicked and visited the page */
+a:visited {
+    color: #9C27B0; /* Purple */
+}
+
+/* 3. Hover state: When the user's mouse pointer is resting on the link */
+a:hover {
+    color: #F44336; /* Red */
+    text-decoration: underline; /* Adds underline on hover for visibility */
+}
+
+/* 4. Active state: The exact moment the link is being clicked */
+a:active {
+    color: #4CAF50; /* Green */
+}
+
+/* Extra styling just to make the text look nice */
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}

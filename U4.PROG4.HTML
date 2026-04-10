@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Demonstration</title>
+    
+    <link rel="stylesheet" href="U4.PROG4.CSS">
+</head>
+<body>
+
+    <h2>CSS Selectors Demonstration</h2>
+
+    <p>This is a standard paragraph, but <span class="highlight">this text is selected by a Class</span>.</p>
+
+    <div id="special-box">
+        This box is styled using an ID selector. It is unique!
+    </div>
+
+    <h3>This is an H3 Heading</h3>
+    <h4>This is an H4 Heading</h4>
+
+    <p>This paragraph comes immediately after an H4, so it gets a special background and border from the Adjacent Sibling Selector.</p>
+
+    <div class="container">
+        <p>1. This paragraph is styled by the Descendant Selector because it lives inside the "container" div.</p>
+        <div>
+            <p>2. This one is also styled, even though it's nested deeper inside another div!</p>
+        </div>
+    </div>
+
+    <ul class="list-container">
+        <li>Direct child 1 (Styled by Child Selector)</li>
+        <li>Direct child 2 (Styled by Child Selector)
+            <ul>
+                <li>Nested child (NOT styled by Child Selector because it's not a direct child of .list-container)</li>
+            </ul>
+        </li>
+    </ul>
+
+    <button class="hover-btn">over over me!</button>
+
+</body>
+</html>

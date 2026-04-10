@@ -1,0 +1,65 @@
+/* General Table Styling */
+table {
+    border-collapse: collapse; /* Removes double borders */
+    width: 340px;
+    height: 340px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+td {
+    border: 2px solid #333;
+    width: 33.33%;
+    cursor: pointer;
+    /* Smooth transition for the color change */
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+/* Hover Effects for each specific cell */
+.cell-red:hover {
+    background-color: red;
+    color: white;
+}
+
+.cell-blue:hover {
+    background-color: blue;
+    color: white;
+}
+
+.cell-green:hover {
+    background-color: green;
+    color: white;
+}
+
+.cell-yellow:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.cell-orange:hover {
+    background-color: orange;
+    color: black;
+}
+
+.cell-purple:hover {
+    background-color: purple;
+    color: white;
+}
+
+.cell-pink:hover {
+    background-color: pink;
+    color: black;
+}
+
+.cell-cyan:hover {
+    background-color: cyan;
+    color: black;
+}
+
+.cell-brown:hover {
+    background-color: brown;
+    color: white;
+}

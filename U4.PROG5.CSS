@@ -1,0 +1,14 @@
+ .hover-image {
+            width: 400px;
+            border-radius: 8px; /* Optional: rounds the corners slightly */
+            opacity: 1; /* The original, fully visible state */
+            
+            /* The transition makes the opacity change smooth over 0.4 seconds */
+            transition: opacity 0.5s ease-in-out;
+            cursor: pointer; /* Changes the mouse cursor to a pointer */
+        }
+
+        /* The :hover pseudo-class triggers when the mouse goes over the element */
+        .hover-image:hover {
+            opacity: 0.7; /* Decreases opacity to 70% on mouse over */
+        }

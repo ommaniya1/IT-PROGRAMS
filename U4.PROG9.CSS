@@ -1,0 +1,40 @@
+/* Removes default browser margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the navigation bar container */
+.navbar {
+    background-color: #333; /* Dark gray background */
+}
+
+/* Style the unordered list inside the navbar */
+.navbar ul {
+    list-style-type: none;   /* Removes the default bullet points */
+    display: flex;           /* Arranges the list items in a horizontal row */
+    justify-content: center; /* Centers the navigation links horizontally */
+}
+
+/* Style the clickable links inside the list */
+.navbar a {
+    display: block;
+    color: white;            /* White text color */
+    text-align: center;
+    padding: 16px 24px;      /* Adds space around the text (top/bottom right/left) */
+    text-decoration: none;   /* Removes the default underline from links */
+    font-size: 18px;
+    transition: background-color 0.3s; /* Makes the hover effect smooth */
+}
+
+/* Add a hover effect for when the mouse passes over a link */
+.navbar a:hover {
+    background-color: #555;  /* Lighter gray on hover */
+}
+
+/* Style for the current/active page 
+.navbar a.active {
+    background-color: #adce04; /* Green background to show which page you are on 
+}*/

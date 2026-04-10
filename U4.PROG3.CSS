@@ -1,0 +1,12 @@
+/* style.css */
+
+.colorful-text {
+    color: #E91E63; /* This is a hex code for a vibrant pinkish-red */
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.highlight {
+    color: rgb(255, 136, 0);
+    font-weight: bold;
+}

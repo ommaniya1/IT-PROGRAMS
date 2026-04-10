@@ -1,0 +1,80 @@
+
+        /* 1. UNIVERSAL SELECTOR (*) 
+           Selects absolutely everything on the page. Good for resetting defaults. */
+        * {
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* 2. TYPE / ELEMENT SELECTOR 
+           Selects all elements of a specific HTML tag. */
+        body {
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+        }
+
+        /* 3. CLASS SELECTOR (.) 
+           Selects elements with a specific class attribute. Can be used on multiple elements. */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+            padding: 2px 5px;
+        }
+
+        /* 4. ID SELECTOR (#) 
+           Selects a single, unique element with a specific ID attribute. */
+        #special-box {
+            background-color: #2196F3;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /* 5. GROUPING SELECTOR (,) 
+           Applies the same styles to multiple different selectors to save code. */
+        h3, h4 {
+            color: #E91E63;
+            margin-bottom: 5px;
+        }
+
+        /* 6. DESCENDANT SELECTOR (space) 
+           Selects elements that are inside another specified element (at any depth). */
+        .container p {
+            color: #ed9039;
+            font-style: italic;
+        }
+
+        /* 7. CHILD SELECTOR (>) 
+           Selects elements that are *direct* children of a specified element. */
+        .list-container > li {
+            list-style-type: square;
+            color: rgb(255, 0, 25);
+        }
+
+        /* 8. ADJACENT SIBLING SELECTOR (+) 
+           Selects an element that is placed immediately after another specified element. */
+        h4 + p {
+            background-color: #bfe1f8;
+            padding: 10px;
+            border-left: 4px solid #5461c0;
+        }
+
+        /* hover over button
+           */
+        .hover-btn {
+            background-color: #1b1ebf;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .hover-btn:hover {
+            background-color: #0ed018;
+            transform: scale(1.05); /* Makes the button slightly larger on hover */
+        }

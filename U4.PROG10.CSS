@@ -1,0 +1,23 @@
+/* style.css */
+
+/* Formatting for the first paragraph */
+.para-one {
+    color: #047206; /* Dark blue-gray text */
+    background-color: #ecefe8; /* Light gray background */
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    padding: 10px;
+    border-left: 6px solid #3cdb34; /* Blue line on the left */
+    line-height: 1.6;
+}
+
+/* Formatting for the second paragraph */
+.para-two {
+    color: #149be3; /* Bright red text */
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left; /* Aligns the text to the right side of the page */
+    letter-spacing: 2px; /* Adds space between each letter */
+    text-transform:capitalize; /* Makes all letters capital */
+}
