@@ -1,0 +1,69 @@
+<!--Write a program for Mouse events of JQuery-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Mouse Events</title>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+
+      // Click event
+      $("#btn").click(function(){
+        $("#msg").text("Button Clicked!");
+      });
+
+      // Double click event
+      $("#btn").dblclick(function(){
+        $("#msg").text("Button Double Clicked!");
+      });
+
+      // Mouse enter event
+      $("#box").mouseenter(function(){
+        $("#msg").text("Mouse Entered Box");
+      });
+
+      // Mouse leave event
+      $("#box").mouseleave(function(){
+        $("#msg").text("Mouse Left Box");
+      });
+
+      // Mouse down event
+      $("#box").mousedown(function(){
+        $("#msg").text("Mouse Button Pressed");
+      });
+
+      // Mouse up event
+      $("#box").mouseup(function(){
+        $("#msg").text("Mouse Button Released");
+      });
+
+    });
+  </script>
+
+  <style>
+    #box {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 100px;
+      margin-top: 20px;
+    }
+  </style>
+
+</head>
+<body>
+
+<h2>jQuery Mouse Events Example</h2>
+
+<button id="btn">Click or Double Click</button>
+
+<div id="box">Hover Here</div>
+
+<p id="msg"></p>
+
+</body>
+</html>

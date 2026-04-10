@@ -1,0 +1,66 @@
+<!--Write a program to represent all events of JavaScript.-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Events</title>
+
+  <script>
+    // Button click event
+    function showMessage() {
+      alert("Button Clicked!");
+    }
+
+    // Mouse over event
+    function mouseOver() {
+      document.getElementById("msg").innerHTML = "Mouse Over Event";
+    }
+
+    // Mouse out event
+    function mouseOut() {
+      document.getElementById("msg").innerHTML = "Mouse Out Event";
+    }
+
+    // Key press event
+    function keyPress() {
+      document.getElementById("msg").innerHTML = "Key Pressed!";
+    }
+
+    // Form submit event
+    function formSubmit() {
+      alert("Form Submitted!");
+    }
+
+    // Page load event
+    function pageLoad() {
+      alert("Page Loaded!");
+    }
+  </script>
+
+</head>
+
+<body onload="pageLoad()">
+
+<h2>JavaScript Events Example</h2>
+
+<!-- Click Event -->
+<button onclick="showMessage()">Click Me</button>
+<br><br>
+
+<!-- Mouse Events -->
+<p onmouseover="mouseOver()" onmouseout="mouseOut()" style="color:blue;">
+  Hover over this text
+</p>
+
+<!-- Keyboard Event -->
+<input type="text" onkeypress="keyPress()" placeholder="Type something">
+<br><br>
+
+<!-- Form Event -->
+<form onsubmit="formSubmit()">
+  <input type="submit" value="Submit Form">
+</form>
+
+<p id="msg"></p>
+
+</body>
+</html>

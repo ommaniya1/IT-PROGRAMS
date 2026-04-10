@@ -1,0 +1,19 @@
+<!--Write a program to change the HTML content using javascript.-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Content</title>
+</head>
+<body>
+
+  <h1 id="myHeading">Hello World!</h1>
+  <button onclick="changeText()">Click Me</button>
+
+  <script>
+    function changeText() {
+      document.getElementById("myHeading").innerHTML = "Hello JavaScript!";
+    }
+  </script>
+
+</body>
+</html>

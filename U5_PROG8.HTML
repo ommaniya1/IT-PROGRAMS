@@ -1,0 +1,59 @@
+<!--Write a program for Form events of JQuery-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Form Events</title>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+
+      // Focus event
+      $("#name").focus(function(){
+        $("#msg").text("Input field focused");
+      });
+
+      // Blur event
+      $("#name").blur(function(){
+        $("#msg").text("Input field lost focus");
+      });
+
+      // Change event
+      $("#course").change(function(){
+        $("#msg").text("Course selected: " + $(this).val());
+      });
+
+      // Submit event
+      $("#myForm").submit(function(){
+        alert("Form Submitted!");
+      });
+
+    });
+  </script>
+
+</head>
+<body>
+
+<h2>jQuery Form Events Example</h2>
+
+<form id="myForm">
+  Name: <input type="text" id="name"><br><br>
+
+  Course:
+  <select id="course">
+    <option value="">Select</option>
+    <option value="JavaScript">JavaScript</option>
+    <option value="jQuery">jQuery</option>
+    <option value="HTML">HTML</option>
+  </select>
+  <br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+<p id="msg"></p>
+
+</body>
+</html>

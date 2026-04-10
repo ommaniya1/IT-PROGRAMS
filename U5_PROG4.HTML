@@ -1,0 +1,56 @@
+<!--Write a program to for different loops in Javascripts.-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Loops Example</h2>
+<p id="output"></p>
+
+<script>
+  var text = "";
+
+  // 1. for loop
+  for (var i = 1; i <= 5; i++)
+   {
+    text += "For Loop: " + i + "<br>";
+}
+
+  text += "<br>";
+
+  // 2. while loop
+  var j = 1;
+  while (j <= 5) {
+    text += "While Loop: " + j + "<br>";
+    j++;
+  }
+
+  text += "<br>";
+
+  // 3. do...while loop
+  var k = 1;
+  do {
+    text += "Do While Loop: " + k + "<br>";
+    k++;
+  } while (k <= 5);
+
+  text += "<br>";
+
+  // 4. for...in loop
+  var person = {name: "John", age: 25};
+  for (var key in person) {
+    text += "For In Loop: " + key + " = " + person[key] + "<br>";
+  }
+
+  text += "<br>";
+
+  // 5. for...of loop
+  var fruits = ["Apple", "Banana", "Mango"];
+  for (var fruit of fruits) {
+    text += "For Of Loop: " + fruit + "<br>";
+  }
+
+  document.getElementById("output").innerHTML = text;
+</script>
+
+</body>
+</html>

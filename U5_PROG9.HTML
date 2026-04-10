@@ -1,0 +1,41 @@
+<!--Write a program for Keyboard events of JQuery-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Keyboard Events</title>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+
+      // Keydown event
+      $("#textbox").keydown(function(){
+        $("#msg").text("Key Down Event Triggered");
+      });
+
+      // Keypress event
+      $("#textbox").keypress(function(){
+        $("#msg").text("Key Press Event Triggered");
+      });
+
+      // Keyup event
+      $("#textbox").keyup(function(){
+        $("#msg").text("Key Up Event Triggered");
+      });
+
+    });
+  </script>
+
+</head>
+<body>
+
+<h2>Keyboard Events in jQuery</h2>
+
+<input type="text" id="textbox" placeholder="Type here">
+
+<p id="msg"></p>
+
+</body>
+</html>
